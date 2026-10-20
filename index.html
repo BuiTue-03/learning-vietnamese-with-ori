@@ -329,38 +329,38 @@ var LESSONS = [
       { vi: "mạ", en: "rice seedling", tone: "nặng" }
     ] },
   { id: "al", group: "found", title: "Bảng chữ cái", sub: "The 29 letters", unit: "letters", icon: "letter", kind: "letters", typing: false,
-    tip: "Each card shows the letter, its spoken name and a word that starts with it.",
+    tip: "Each card shows the letter, how it is read aloud and a word that starts with it.",
     culture: [{ t: "29 letters", x: "The Vietnamese alphabet has 29 letters. F, j, w and z are not part of it and appear mainly in foreign words. Some sounds are written with two letters, such as ng, nh, th, ph and tr." }],
     items: [
       { vi: "A a", name: "a", word: "anh", wordEn: "older brother" },
       { vi: "Ă ă", name: "á", word: "ăn", wordEn: "to eat" },
       { vi: "Â â", name: "ớ", word: "ấm", wordEn: "warm" },
-      { vi: "B b", name: "bê", word: "bà", wordEn: "grandmother" },
-      { vi: "C c", name: "xê", word: "cà phê", wordEn: "coffee" },
-      { vi: "D d", name: "dê", word: "dì", wordEn: "aunt" },
-      { vi: "Đ đ", name: "đê", word: "đi", wordEn: "to go" },
+      { vi: "B b", name: "bờ", word: "bà", wordEn: "grandmother" },
+      { vi: "C c", name: "cờ", word: "cà phê", wordEn: "coffee" },
+      { vi: "D d", name: "dờ", word: "dì", wordEn: "aunt" },
+      { vi: "Đ đ", name: "đờ", word: "đi", wordEn: "to go" },
       { vi: "E e", name: "e", word: "em", wordEn: "younger sibling" },
       { vi: "Ê ê", name: "ê", word: "ếch", wordEn: "frog" },
-      { vi: "G g", name: "giê", word: "gà", wordEn: "chicken" },
-      { vi: "H h", name: "hát", word: "hoa", wordEn: "flower" },
+      { vi: "G g", name: "gờ", word: "gà", wordEn: "chicken" },
+      { vi: "H h", name: "hờ", word: "hoa", wordEn: "flower" },
       { vi: "I i", name: "i", word: "ít", wordEn: "few; little" },
       { vi: "K k", name: "ca", word: "kem", wordEn: "ice cream" },
-      { vi: "L l", name: "e-lờ", word: "lá", wordEn: "leaf" },
-      { vi: "M m", name: "em-mờ", word: "mẹ", wordEn: "mother" },
-      { vi: "N n", name: "en-nờ", word: "nước", wordEn: "water" },
+      { vi: "L l", name: "lờ", word: "lá", wordEn: "leaf" },
+      { vi: "M m", name: "mờ", word: "mẹ", wordEn: "mother" },
+      { vi: "N n", name: "nờ", word: "nước", wordEn: "water" },
       { vi: "O o", name: "o", word: "ong", wordEn: "bee" },
       { vi: "Ô ô", name: "ô", word: "ông", wordEn: "grandfather" },
       { vi: "Ơ ơ", name: "ơ", word: "ớt", wordEn: "chili" },
-      { vi: "P p", name: "pê", word: "pin", wordEn: "battery" },
-      { vi: "Q q", name: "cu", word: "quả", wordEn: "fruit" },
-      { vi: "R r", name: "e-rờ", word: "rau", wordEn: "vegetables" },
-      { vi: "S s", name: "ét-sì", word: "sữa", wordEn: "milk" },
-      { vi: "T t", name: "tê", word: "tôi", wordEn: "I; me" },
+      { vi: "P p", name: "pờ", word: "pin", wordEn: "battery" },
+      { vi: "Q q", name: "quờ", word: "quả", wordEn: "fruit" },
+      { vi: "R r", name: "rờ", word: "rau", wordEn: "vegetables" },
+      { vi: "S s", name: "sờ", word: "sữa", wordEn: "milk" },
+      { vi: "T t", name: "tờ", word: "tôi", wordEn: "I; me" },
       { vi: "U u", name: "u", word: "uống", wordEn: "to drink" },
       { vi: "Ư ư", name: "ư", word: "ừ", wordEn: "yeah (informal)" },
-      { vi: "V v", name: "vê", word: "vâng", wordEn: "yes (polite)" },
-      { vi: "X x", name: "ích-xì", word: "xe", wordEn: "vehicle" },
-      { vi: "Y y", name: "i dài", word: "yêu", wordEn: "to love" }
+      { vi: "V v", name: "vờ", word: "vâng", wordEn: "yes (polite)" },
+      { vi: "X x", name: "xờ", word: "xe", wordEn: "vehicle" },
+      { vi: "Y y", name: "i", word: "yêu", wordEn: "to love" }
     ] },
   { id: "fam", group: "people", title: "Xưng hô và gia đình", sub: "Pronouns and family", unit: "words", icon: "people", pronoun: true,
     tip: "Vietnamese uses family words as pronouns. Which one you use depends on the other person’s age and your relationship.",
@@ -1829,7 +1829,7 @@ LESSONS.forEach(function (l) {
   l.typing = l.typing !== false;
   l.items.forEach(function (it, i) {
     it.vi = it.vi.normalize("NFC");
-    if (l.kind === "letters") it.en = "“" + it.name + "”, as in " + it.word + " (" + it.wordEn + ")";
+    if (l.kind === "letters") it.en = "read “" + it.name + "”, as in " + it.word + " (" + it.wordEn + ")";
     it.id = l.id + "-" + String(i + 1).padStart(2, "0");
     it.lesson = l.id;
     ALL.push(it);
@@ -2389,13 +2389,15 @@ function makeQuestions(items, ctx) {
       opts = others("word").map(function (o) { return { label: o.word, correct: false }; });
       opts.push({ label: it.word, correct: true });
     } else if (kind === "lname") {
-      q.prompt = "What is the name of the letter “" + it.vi + "”?";
+      q.prompt = "How is the letter “" + it.vi + "” read?";
       opts = others("name").map(function (o) { return { label: o.name, correct: false }; });
       opts.push({ label: it.name, correct: true });
     } else {
       q.prompt = "Listen, then choose what you hear.";
       q.audioId = it.id;
-      opts = others("vi").map(function (o) { return { label: o.vi, correct: false }; });
+      /* letters that are read the same (I and Y) must not appear together, or two answers would be right */
+      var heard = L.kind === "letters" ? pickOthers(it, pool.filter(function (x) { return x.name !== it.name; }), 3, "vi", rng) : others("vi");
+      opts = heard.map(function (o) { return { label: o.vi, correct: false }; });
       opts.push({ label: it.vi, correct: true });
     }
     q.options = shuffle(opts, rng);
@@ -2526,8 +2528,8 @@ function lessonView() {
   var face;
   if (letters) {
     face = !state.flipped
-      ? '<div class="face"><div class="word">' + esc(it.vi) + '</div><div class="hint">Tap the card to see its name</div></div>'
-      : '<div class="face"><div class="gloss">Name: ' + esc(it.name) + '</div><div class="ex"><div class="vi">' + esc(it.word) + '</div><div class="en">' + esc(it.wordEn) + '</div></div></div>';
+      ? '<div class="face"><div class="word">' + esc(it.vi) + '</div><div class="hint">Tap the card to see how it is read</div></div>'
+      : '<div class="face"><div class="gloss">Read: ' + esc(it.name) + '</div><div class="ex"><div class="vi">' + esc(it.word) + '</div><div class="en">' + esc(it.wordEn) + '</div></div></div>';
   } else if ((store.mode === "vi2en") === !state.flipped) {
     face = '<div class="face"><div class="word">' + esc(it.vi) + '</div><div class="hint">Tap the card to see the ' + (store.mode === "vi2en" ? "meaning" : "answer") + '</div></div>';
   } else {
@@ -2593,7 +2595,7 @@ function quizView() {
     var good = cur.options[q.picked].correct;
     var msg = good ? PRAISE[q.i % PRAISE.length] : COMFORT[q.i % COMFORT.length];
     var it = cur.item;
-    var meaning = lessonById(it.lesson).kind === "letters" ? '<span class="vi">' + esc(it.vi) + '</span> is called “' + esc(it.name) + '”, as in ' + esc(it.word) + ' (' + esc(it.wordEn) + ').' : '<span class="vi">' + esc(it.vi) + '</span> means ' + esc(it.en) + '.';
+    var meaning = lessonById(it.lesson).kind === "letters" ? '<span class="vi">' + esc(it.vi) + '</span> is read “' + esc(it.name) + '”, as in ' + esc(it.word) + ' (' + esc(it.wordEn) + ').' : '<span class="vi">' + esc(it.vi) + '</span> means ' + esc(it.en) + '.';
     fb = '<div class="fb">' + mascot({ pose: good ? "cheer" : "oops", size: 56, hop: good }) +
       '<div class="bubble ' + (good ? "ok" : "bad") + '" role="status"><div><div class="big">' + msg[0] + '</div><small>' + msg[1] + '</small></div>' +
       '<div>' + meaning + '</div>' +
@@ -2731,7 +2733,7 @@ function authorView() {
     '<div class="ctrl"><button class="btn small" data-act="missing" aria-pressed="' + state.onlyMissing + '">' + (state.onlyMissing ? "Show everything" : "Show only missing") + '</button></div>' +
     '<h2 class="sec">Check with a native speaker before release</h2>' +
     '<ul class="checks"><li>The tone descriptions in “Sáu thanh điệu” are approximate, written for Northern speech.</li>' +
-    '<li>Letter names (for example Ă “á”, Â “ớ”, Q “cu”, X “ích-xì”) and the example word for each letter.</li>' +
+    '<li>Letter readings (for example Ă “á”, Â “ớ”, B “bờ”, Q “quờ”, X “xờ”) and the example word for each letter.</li>' +
     '<li>The pronoun guide: the table in “Xưng hô và gia đình” and the meaning of each family word.</li>' +
     '<li>The North/South notes (vâng and dạ, nghìn and ngàn, bố/ba, mẹ/má).</li>' +
     '<li>The three dialogues, including the taxi price and travel time, which may not match real prices.</li>' +
