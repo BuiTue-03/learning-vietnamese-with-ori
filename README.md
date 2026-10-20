@@ -3,7 +3,7 @@
 Everyday Vietnamese for visitors and newcomers, with Hà Nội (Northern) pronunciation.
 A small, free web app: flashcards by situation, quizzes, typing practice, short dialogues, XP, levels, badges and a stick-figure guide you can dress up.
 
-**Live app:** `https://buitue-03.github.io/learning-vietnamese-with-ori/`
+**Live app:** `[https://buitue-03.github.io/learning-vietnamese-with-ori/`](https://buitue-03.github.io/learning-vietnamese-with-ori/)
 
 ## What is inside
 
