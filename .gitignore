@@ -1,0 +1,18 @@
+# OS and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+.vscode/
+.idea/
+
+# Raw phone recordings and working files (only finished audio/*.mp3 belongs in the repo)
+audio/*.m4a
+audio/*.amr
+audio/*.3gp
+audio/*.wav
+audio/*.aac
+audio/_raw/
+audio/_trash/
+*.xlsx
+*.bak
