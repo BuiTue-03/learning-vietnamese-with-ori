@@ -1,0 +1,32 @@
+// Lesson sc · Trường học (School and study).
+// Items are positional (audio sc-01.mp3, sc-02.mp3, ...): only ever APPEND items, never insert, delete or reorder.
+export default { id: "sc", group: "society", title: "Trường học", sub: "School and study", unit: "words and phrases", icon: "book",
+  tip: "Add năm thứ… to say which year you are in: Tôi học năm thứ hai means “I’m in my second year”.",
+  culture: [{ t: "Respect in class", x: "Students call a male teacher thầy and a female teacher cô, and call themselves em. Standing up or saying Em chào thầy ạ at the start of class is traditional in many schools." }],
+  items: [
+    { vi: "lớp", en: "class; grade" },
+    { vi: "lớp học", en: "classroom" },
+    { vi: "bài học", en: "lesson" },
+    { vi: "bài tập", en: "homework; exercise" },
+    { vi: "bài kiểm tra", en: "test; quiz" },
+    { vi: "vở", en: "notebook" },
+    { vi: "bảng", en: "board" },
+    { vi: "điểm", en: "grade; score" },
+    { vi: "kỳ thi", en: "exam" },
+    { vi: "môn học", en: "subject" },
+    { vi: "toán", en: "maths" },
+    { vi: "khoa học", en: "science" },
+    { vi: "âm nhạc", en: "music (subject)" },
+    { vi: "thể dục", en: "physical education; exercise" },
+    { vi: "đi học", en: "to go to school" },
+    { vi: "tan học", en: "to finish school for the day" },
+    { vi: "nghỉ học", en: "to miss school; to be off school" },
+    { vi: "tốt nghiệp", en: "to graduate" },
+    { vi: "học bổng", en: "scholarship" },
+    { vi: "lớp tiếng Việt", en: "Vietnamese class" },
+    { vi: "Bạn học trường nào?", en: "Which school do you study at?" },
+    { vi: "Bạn học năm thứ mấy?", en: "What year are you in?" },
+    { vi: "Tôi học năm thứ hai", en: "I’m in my second year" },
+    { vi: "Thầy ơi, em xin hỏi", en: "Teacher, may I ask a question?" },
+    { vi: "Em xin phép ra ngoài", en: "May I step out? (said to a teacher)" }
+  ] };

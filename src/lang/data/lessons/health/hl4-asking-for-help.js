@@ -1,0 +1,30 @@
+// Lesson hl4 · Cần giúp đỡ (Asking for help).
+// Items are positional (audio hl4-01.mp3, hl4-02.mp3, ...): only ever APPEND items, never insert, delete or reorder.
+export default { id: "hl4", group: "health", title: "Cần giúp đỡ", sub: "Asking for help", unit: "phrases", icon: "alert",
+  tip: "In an emergency, shout the short phrases first. The longer sentences are for when you can talk to someone.",
+  culture: [{ t: "Emergency numbers", x: "In Vietnam the police number is 113, fire and rescue is 114 and the ambulance is 115. The number 112 is listed for search and rescue. A draft plan would merge the emergency lines into one national number, with a pilot from 2025, so check the numbers again before you travel." }],
+  items: [
+    { vi: "Giúp tôi với!", en: "Help me!" },
+    { vi: "Cứu tôi với!", en: "Save me! (urgent)" },
+    { vi: "Gọi cấp cứu!", en: "Call emergency services!" },
+    { vi: "Gọi xe cứu thương!", en: "Call an ambulance!" },
+    { vi: "Gọi công an!", en: "Call the police!" },
+    { vi: "Cháy!", en: "Fire!" },
+    { vi: "Có trộm!", en: "Thief!" },
+    { vi: "Tôi cần bác sĩ ngay", en: "I need a doctor right now" },
+    { vi: "Tôi bị tai nạn", en: "I’ve had an accident" },
+    { vi: "Tôi bị lạc", en: "I’m lost" },
+    { vi: "Tôi bị mất hộ chiếu", en: "I’ve lost my passport" },
+    { vi: "Tôi bị mất ví", en: "I’ve lost my wallet" },
+    { vi: "Tôi bị mất điện thoại", en: "I’ve lost my phone" },
+    { vi: "Tôi bị cướp", en: "I’ve been robbed" },
+    { vi: "Tôi cần người nói tiếng Anh", en: "I need someone who speaks English" },
+    { vi: "Bạn có thể giúp tôi không?", en: "Can you help me?" },
+    { vi: "Làm ơn nói chậm hơn", en: "Please speak more slowly" },
+    { vi: "Làm ơn viết ra giúp tôi", en: "Please write it down for me" },
+    { vi: "Đại sứ quán ở đâu?", en: "Where is the embassy?" },
+    { vi: "Đồn công an ở đâu?", en: "Where is the police station?" },
+    { vi: "Tôi cần dùng điện thoại", en: "I need to use a phone" },
+    { vi: "Làm ơn gọi giúp tôi một chiếc taxi", en: "Please call a taxi for me" },
+    { vi: "Tôi không sao", en: "I’m okay" }
+  ] };

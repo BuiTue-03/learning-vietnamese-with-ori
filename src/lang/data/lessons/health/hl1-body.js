@@ -1,0 +1,32 @@
+// Lesson hl1 · Cơ thể (The body).
+// Items are positional (audio hl1-01.mp3, hl1-02.mp3, ...): only ever APPEND items, never insert, delete or reorder.
+export default { id: "hl1", group: "health", title: "Cơ thể", sub: "The body", unit: "words", icon: "body",
+  tip: "Say đau (hurts) after Tôi to tell someone where it hurts: Tôi đau đầu means “I have a headache”.",
+  culture: [],
+  items: [
+    { vi: "cơ thể", en: "body" },
+    { vi: "đầu", en: "head", ex: ["Tôi đau đầu.", "I have a headache."] },
+    { vi: "tóc", en: "hair" },
+    { vi: "mặt", en: "face" },
+    { vi: "mắt", en: "eye" },
+    { vi: "tai", en: "ear" },
+    { vi: "mũi", en: "nose" },
+    { vi: "miệng", en: "mouth" },
+    { vi: "răng", en: "tooth; teeth", ex: ["Tôi đau răng.", "I have a toothache."] },
+    { vi: "lưỡi", en: "tongue" },
+    { vi: "cổ", en: "neck" },
+    { vi: "họng", en: "throat", ex: ["Tôi đau họng.", "I have a sore throat."] },
+    { vi: "vai", en: "shoulder" },
+    { vi: "tay", en: "hand; arm" },
+    { vi: "ngón tay", en: "finger" },
+    { vi: "ngực", en: "chest" },
+    { vi: "tim", en: "heart" },
+    { vi: "bụng", en: "stomach; belly", ex: ["Tôi đau bụng.", "I have a stomachache."] },
+    { vi: "lưng", en: "back" },
+    { vi: "chân", en: "leg; foot" },
+    { vi: "đầu gối", en: "knee" },
+    { vi: "bàn chân", en: "foot (the part you step on)" },
+    { vi: "da", en: "skin" },
+    { vi: "máu", en: "blood" },
+    { vi: "xương", en: "bone" }
+  ] };

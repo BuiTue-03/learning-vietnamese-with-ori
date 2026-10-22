@@ -1,0 +1,32 @@
+// Lesson lc · Vị trí và hướng (Position words).
+// Items are positional (audio lc-01.mp3, lc-02.mp3, ...): only ever APPEND items, never insert, delete or reorder.
+export default { id: "lc", group: "gram", title: "Vị trí và hướng", sub: "Position words", unit: "words and phrases", icon: "pin",
+  tip: "Position words come before the noun: trên bàn means “on the table”, trong nhà means “in the house”.",
+  culture: [{ t: "Floors", x: "In the North, tầng một is usually the ground floor and tầng hai is the floor above. In the South the ground floor is often called tầng trệt, and tầng một is the floor above it. In a lift, look at the buttons if you are unsure." }],
+  items: [
+    { vi: "ở đây", en: "here" },
+    { vi: "ở đó", en: "there" },
+    { vi: "ở kia", en: "over there" },
+    { vi: "trên", en: "on; above" },
+    { vi: "dưới", en: "under; below" },
+    { vi: "trong", en: "in; inside" },
+    { vi: "ngoài", en: "outside" },
+    { vi: "giữa", en: "between; in the middle of" },
+    { vi: "bên cạnh", en: "next to" },
+    { vi: "trước", en: "in front of; before" },
+    { vi: "sau", en: "behind; after" },
+    { vi: "bên trái", en: "on the left" },
+    { vi: "bên phải", en: "on the right" },
+    { vi: "phía trước", en: "ahead; in front" },
+    { vi: "phía sau", en: "at the back" },
+    { vi: "đối diện", en: "opposite; facing" },
+    { vi: "ngã tư", en: "crossroads; intersection" },
+    { vi: "góc đường", en: "street corner" },
+    { vi: "cuối đường", en: "end of the road" },
+    { vi: "tầng", en: "floor; storey", ex: ["Phòng ở tầng ba.", "The room is on the third floor."] },
+    { vi: "Nhà vệ sinh ở bên trái", en: "The toilet is on the left" },
+    { vi: "Ngân hàng ở đối diện chợ", en: "The bank is opposite the market" },
+    { vi: "Rẽ phải ở ngã tư", en: "Turn right at the crossroads" },
+    { vi: "Ở gần đây có nhà thuốc không?", en: "Is there a pharmacy near here?" },
+    { vi: "đằng kia", en: "over there", note: "Often used when pointing." }
+  ] };

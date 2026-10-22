@@ -1,0 +1,33 @@
+// Lesson pl · Địa điểm (Places in town).
+// Items are positional (audio pl-01.mp3, pl-02.mp3, ...): only ever APPEND items, never insert, delete or reorder.
+export default { id: "pl", group: "situ", title: "Địa điểm", sub: "Places in town", unit: "words", icon: "pin",
+  tip: "Many of these words go after ở (at) or đến (to): Tôi đến bảo tàng means “I’m going to the museum”.",
+  culture: [{ t: "Streets in Hà Nội", x: "Street names in the Old Quarter usually start with phố, as in phố Hàng Bạc. Đường is used for roads in general. A ngõ is a narrow alley that leads off a street." }],
+  items: [
+    { vi: "thành phố", en: "city" },
+    { vi: "nông thôn", en: "countryside" },
+    { vi: "phố", en: "street (in a name)" },
+    { vi: "đường", en: "road; street" },
+    { vi: "ngõ", en: "alley; lane" },
+    { vi: "quận", en: "district" },
+    { vi: "công viên", en: "park" },
+    { vi: "hồ", en: "lake" },
+    { vi: "sông", en: "river" },
+    { vi: "biển", en: "sea" },
+    { vi: "bãi biển", en: "beach" },
+    { vi: "núi", en: "mountain" },
+    { vi: "chùa", en: "pagoda; Buddhist temple" },
+    { vi: "đền", en: "shrine; temple" },
+    { vi: "nhà thờ", en: "church" },
+    { vi: "bảo tàng", en: "museum" },
+    { vi: "nhà hát", en: "theatre" },
+    { vi: "rạp chiếu phim", en: "cinema" },
+    { vi: "thư viện", en: "library" },
+    { vi: "trường học", en: "school (building)" },
+    { vi: "đại học", en: "university" },
+    { vi: "nhà hàng", en: "restaurant" },
+    { vi: "quán cà phê", en: "café" },
+    { vi: "quán ăn", en: "eatery; small restaurant" },
+    { vi: "công ty", en: "company" },
+    { vi: "văn phòng", en: "office" }
+  ] };

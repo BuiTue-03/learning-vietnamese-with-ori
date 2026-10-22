@@ -11,13 +11,22 @@ A small, free web app: flashcards by situation, quizzes, typing practice, short 
 - Flashcards (Vietnamese → English and English → Vietnamese), multiple-choice quizzes, typing practice, daily practice
 - Recordings by a native speaker (being added, see [audio/README.md](audio/README.md))
 - Progress, XP, levels, badges and outfits, all saved in the learner's own browser (nothing is sent anywhere)
-- A static site: no server, no build step, no tracking (fonts load from Google Fonts, so an internet connection is needed for the intended look)
+- A static site: no back end, no build step, no tracking (fonts load from Google Fonts, so an internet connection is needed for the intended look)
 
 ## Repository layout
 
 | Path | What it is |
 | --- | --- |
-| `index.html` | The whole app (HTML, CSS and JavaScript in one file) |
+| `index.html` | The page shell: head, one empty `<main id="app">` and the script tag. No app code in it |
+| `src/main.js` | Entry point: loads progress, draws the first screen, wires the events |
+| `src/lang/` | Vietnamese content and language rules. `data/lessons/` has one small file per lesson, grouped by topic; `data/catalog.js` joins them. `text.js`, `tone.js`, `typing.js`, `questions.js` hold the rules (tone marks, answer checking, quiz questions) |
+| `src/interact/` | Everything the learner sees and touches: `components/` (reusable pieces such as the mascot, lesson card, keyboard), `views/` (one file per screen), `actions/` (what each button does), `events.js` |
+| `src/storage/` | Saving and loading progress in the browser (`localStorage`) |
+| `src/audio/` | Finding which recordings exist, and playing them |
+| `src/game/` | XP, levels, badges, outfits, streaks and spaced repetition |
+| `src/utils/` | Tiny helpers (HTML escaping, dates, shuffling) |
+| `src/styles/main.css` | All the styling |
+| `tests/` | Small automatic tests for the language rules and for the lesson data |
 | `about.html` | About page, linked from the app footer |
 | `404.html` | Page shown for unknown addresses on GitHub Pages |
 | `favicon.svg` | Site icon |
@@ -26,23 +35,38 @@ A small, free web app: flashcards by situation, quizzes, typing practice, short 
 | `tools/check_audio.py` | Compares `audio/` with the manifest and reports missing, extra and misnamed files |
 | `.nojekyll` | Tells GitHub Pages to serve the files as they are |
 
+Dependencies point one way only: `utils` → `lang` → `storage` → `game` → `audio` → `interact`. A lower folder never imports from a higher one.
+
 ## Run it on your computer
 
-Open `index.html` in a browser. That is all. If a browser refuses to play audio from a local file, start a small local server instead:
+The app is split into ES modules, and browsers do not load modules from a `file://` address, so double-clicking `index.html` shows an empty page. Start a small local server instead:
 
 ```
 python -m http.server 8000
 ```
 
-then open `http://localhost:8000`.
+then open `http://localhost:8000`. (`npm start` does the same if Node.js is installed.)
+
+## Run the tests
+
+Needs Node.js 20 or newer. There is nothing to install:
+
+```
+node --test
+```
 
 ## Publish with GitHub Pages
 
-1. Put `index.html` at the top level of the repository, with the `audio/` folder next to it.
+1. Keep the whole folder structure as it is: `index.html`, `src/`, `audio/` and the other files all at the top level of the repository.
 2. In the repository, open **Settings → Pages**, choose the `main` branch and the root folder, then save.
 3. Wait up to about 10 minutes, then open the address shown on that page.
 
 On a free GitHub account the repository must be public, so everyone with the address can see the files in it.
+
+## Adding content
+
+- **A new lesson:** add a file in `src/lang/data/lessons/<topic>/`, then list it in `src/lang/data/lessons/index.js`. Only ever append items to an existing lesson: audio file names are numbered by position (`audio/<lesson>-NN.mp3`), so reordering items would point recordings at the wrong words.
+- **A new badge or outfit:** `src/game/badges.js` or `src/game/outfits.js` (outfit drawings are in `src/interact/components/mascot/`).
 
 ## Add or check recordings
 

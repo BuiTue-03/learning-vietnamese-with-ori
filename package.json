@@ -1,0 +1,12 @@
+{
+  "name": "noi-tieng-viet",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Everyday Vietnamese for visitors and newcomers. A static web app (ES modules, no build step).",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "test": "node --test"
+  }
+}

@@ -1,0 +1,32 @@
+// Lesson cl · Loại từ (Counting words (classifiers)).
+// Items are positional (audio cl-01.mp3, cl-02.mp3, ...): only ever APPEND items, never insert, delete or reorder.
+export default { id: "cl", group: "gram", title: "Loại từ", sub: "Counting words (classifiers)", unit: "phrases", icon: "tag",
+  tip: "Between a number and a noun you add a counting word: số + loại từ + danh từ. For example, hai con mèo means “two cats”.",
+  culture: [{ t: "When you are unsure", x: "Use cái for most objects and con for animals. People will understand you, even when a more exact counting word exists." }],
+  items: [
+    { vi: "cái bàn", en: "table (cái: everyday objects)", ex: ["Một cái bàn.", "A table."] },
+    { vi: "cái ghế", en: "chair" },
+    { vi: "chiếc xe máy", en: "motorbike (chiếc: single items, vehicles)" },
+    { vi: "chiếc áo", en: "shirt" },
+    { vi: "con mèo", en: "cat (con: animals)", ex: ["Hai con mèo.", "Two cats."] },
+    { vi: "con chó", en: "dog" },
+    { vi: "con cá", en: "fish (the animal)" },
+    { vi: "quả cam", en: "orange (quả: round fruit)", note: "In the South: trái cam." },
+    { vi: "quả trứng", en: "egg" },
+    { vi: "quyển sách", en: "book (quyển: books)" },
+    { vi: "tờ giấy", en: "sheet of paper (tờ: flat sheets, notes)" },
+    { vi: "bát phở", en: "bowl of phở (bát: bowls)", note: "In the South: tô phở." },
+    { vi: "cốc nước", en: "glass of water (cốc: glasses)", note: "In the South: ly nước." },
+    { vi: "chai bia", en: "bottle of beer" },
+    { vi: "hộp sữa", en: "box of milk" },
+    { vi: "đôi giày", en: "pair of shoes (đôi: pairs)" },
+    { vi: "đôi đũa", en: "pair of chopsticks" },
+    { vi: "người bạn", en: "a friend (người: people)" },
+    { vi: "hai người", en: "two people" },
+    { vi: "căn phòng", en: "room (căn: rooms, flats)" },
+    { vi: "ngôi nhà", en: "house (ngôi: houses)" },
+    { vi: "cây bút", en: "pen (cây: long thin things, trees)" },
+    { vi: "bông hoa", en: "flower (bông: flowers)" },
+    { vi: "bức ảnh", en: "photo (bức: pictures)" },
+    { vi: "chuyến đi", en: "trip (chuyến: trips)" }
+  ] };

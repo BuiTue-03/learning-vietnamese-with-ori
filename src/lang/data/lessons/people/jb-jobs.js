@@ -1,0 +1,33 @@
+// Lesson jb · Nghề nghiệp (Jobs).
+// Items are positional (audio jb-01.mp3, jb-02.mp3, ...): only ever APPEND items, never insert, delete or reorder.
+export default { id: "jb", group: "people", title: "Nghề nghiệp", sub: "Jobs", unit: "words and phrases", icon: "people",
+  tip: "To say your job, use Tôi là + job: Tôi là giáo viên means “I’m a teacher”.",
+  culture: [{ t: "Student words", x: "Học sinh is a school pupil. Sinh viên is a university student." }],
+  items: [
+    { vi: "sinh viên", en: "university student" },
+    { vi: "học sinh", en: "school pupil" },
+    { vi: "giáo viên", en: "teacher", ex: ["Tôi là giáo viên.", "I’m a teacher."] },
+    { vi: "kỹ sư", en: "engineer" },
+    { vi: "nhân viên văn phòng", en: "office worker" },
+    { vi: "nhân viên", en: "staff member; employee" },
+    { vi: "quản lý", en: "manager" },
+    { vi: "giám đốc", en: "director" },
+    { vi: "kế toán", en: "accountant" },
+    { vi: "luật sư", en: "lawyer" },
+    { vi: "nhà báo", en: "journalist" },
+    { vi: "nhà thiết kế", en: "designer" },
+    { vi: "lập trình viên", en: "programmer" },
+    { vi: "đầu bếp", en: "chef; cook" },
+    { vi: "nhân viên phục vụ", en: "waiter; waitress" },
+    { vi: "tài xế", en: "driver" },
+    { vi: "công an", en: "police officer" },
+    { vi: "công nhân", en: "factory worker" },
+    { vi: "nông dân", en: "farmer" },
+    { vi: "ca sĩ", en: "singer" },
+    { vi: "họa sĩ", en: "painter" },
+    { vi: "hướng dẫn viên du lịch", en: "tour guide" },
+    { vi: "Tôi làm nghề…", en: "My job is…" },
+    { vi: "Tôi làm việc ở một công ty", en: "I work at a company" },
+    { vi: "Tôi tự kinh doanh", en: "I run my own business" },
+    { vi: "Tôi đã nghỉ hưu", en: "I’m retired" }
+  ] };

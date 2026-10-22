@@ -1,0 +1,32 @@
+// Lesson hb · Sở thích (Hobbies and free time).
+// Items are positional (audio hb-01.mp3, hb-02.mp3, ...): only ever APPEND items, never insert, delete or reorder.
+export default { id: "hb", group: "society", title: "Sở thích", sub: "Hobbies and free time", unit: "words and phrases", icon: "music",
+  tip: "To say what you like doing, use Tôi thích + verb: Tôi thích nghe nhạc means “I like listening to music”.",
+  culture: [{ t: "Popular pastimes", x: "Football (bóng đá) is the most popular sport, especially to watch. Badminton (cầu lông) and table tennis (bóng bàn) are easy to play, and many people exercise in parks and public squares." }],
+  items: [
+    { vi: "sở thích", en: "hobby; interest" },
+    { vi: "thời gian rảnh", en: "free time" },
+    { vi: "Bạn thích làm gì?", en: "What do you like to do?" },
+    { vi: "Lúc rảnh bạn làm gì?", en: "What do you do in your free time?" },
+    { vi: "đọc sách", en: "to read books" },
+    { vi: "nghe nhạc", en: "to listen to music" },
+    { vi: "xem phim", en: "to watch films" },
+    { vi: "chơi game", en: "to play video games" },
+    { vi: "hát", en: "to sing" },
+    { vi: "nhảy", en: "to dance; to jump" },
+    { vi: "vẽ", en: "to draw; to paint" },
+    { vi: "nấu ăn", en: "to cook" },
+    { vi: "đi du lịch", en: "to travel" },
+    { vi: "đi bộ", en: "to walk; to go walking" },
+    { vi: "chạy bộ", en: "to jog" },
+    { vi: "bơi", en: "to swim" },
+    { vi: "đạp xe", en: "to cycle" },
+    { vi: "leo núi", en: "to hike; to climb" },
+    { vi: "bóng đá", en: "football (soccer)" },
+    { vi: "cầu lông", en: "badminton" },
+    { vi: "bóng bàn", en: "table tennis" },
+    { vi: "tập thể dục", en: "to exercise" },
+    { vi: "đi cà phê", en: "to go out for coffee" },
+    { vi: "Tôi thích nghe nhạc", en: "I like listening to music" },
+    { vi: "Tôi thích chơi bóng đá", en: "I like playing football" }
+  ] };

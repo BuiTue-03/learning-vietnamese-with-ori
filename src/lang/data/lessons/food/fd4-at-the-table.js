@@ -1,0 +1,30 @@
+// Lesson fd4 · Tại bàn ăn (At the table: needs and requests).
+// Items are positional (audio fd4-01.mp3, fd4-02.mp3, ...): only ever APPEND items, never insert, delete or reorder.
+export default { id: "fd4", group: "food", title: "Tại bàn ăn", sub: "At the table: needs and requests", unit: "phrases", icon: "speech",
+  tip: "Short requests that cover diets, allergies, spice level and paying.",
+  culture: [{ t: "Inviting people to eat", x: "Before eating, people often say “Mời…” to invite others, especially elders, to start. A common line is Mời cả nhà ăn cơm." }],
+  items: [
+    { vi: "Tôi ăn chay", en: "I’m vegetarian" },
+    { vi: "Tôi không ăn thịt", en: "I don’t eat meat" },
+    { vi: "Món này có thịt không?", en: "Does this dish have meat?" },
+    { vi: "Tôi bị dị ứng với…", en: "I’m allergic to…", ex: ["Tôi bị dị ứng với lạc.", "I’m allergic to peanuts."], note: "Peanuts: lạc in the North, đậu phộng in the South." },
+    { vi: "Không hành, làm ơn", en: "No onion, please" },
+    { vi: "Ít cay thôi", en: "Just a little spicy" },
+    { vi: "Không đường", en: "No sugar" },
+    { vi: "Ít đá", en: "Less ice" },
+    { vi: "Cho tôi thêm…", en: "I’d like some more…", ex: ["Cho tôi thêm một bát cơm.", "I’d like another bowl of rice."] },
+    { vi: "Cho tôi xin đôi đũa", en: "Could I have a pair of chopsticks?" },
+    { vi: "Cho tôi xin cái thìa", en: "Could I have a spoon?", note: "In the South: muỗng." },
+    { vi: "Cho tôi xin thực đơn", en: "Could I have the menu?" },
+    { vi: "Món này là món gì?", en: "What is this dish?" },
+    { vi: "Món này có cay không?", en: "Is this dish spicy?" },
+    { vi: "Mời bạn ăn cơm", en: "Please, go ahead and eat", note: "Said to invite others to start eating." },
+    { vi: "Chúc ngon miệng!", en: "Enjoy your meal!" },
+    { vi: "Tôi no rồi", en: "I’m full" },
+    { vi: "Tôi đói", en: "I’m hungry" },
+    { vi: "Tôi khát", en: "I’m thirsty" },
+    { vi: "Cho tôi mang về", en: "Takeaway, please" },
+    { vi: "Cho tôi một cốc nước", en: "A glass of water, please", note: "In the South: một ly nước." },
+    { vi: "Món này ngon lắm", en: "This dish is very tasty" },
+    { vi: "Chúng tôi trả riêng", en: "We’ll pay separately" }
+  ] };

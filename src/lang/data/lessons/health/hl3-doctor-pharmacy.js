@@ -1,0 +1,31 @@
+// Lesson hl3 · Đi khám và nhà thuốc (Doctor and pharmacy).
+// Items are positional (audio hl3-01.mp3, hl3-02.mp3, ...): only ever APPEND items, never insert, delete or reorder.
+export default { id: "hl3", group: "health", title: "Đi khám và nhà thuốc", sub: "Doctor and pharmacy", unit: "words and phrases", icon: "pill",
+  tip: "At a pharmacy you can name the problem and ask for medicine, or just say Tôi bị… and show where it hurts.",
+  culture: [{ t: "Pharmacies", x: "Nhà thuốc (pharmacies) are everywhere and the staff will often suggest a medicine for a minor problem. For anything serious, go to a clinic or hospital." }],
+  items: [
+    { vi: "bác sĩ", en: "doctor" },
+    { vi: "y tá", en: "nurse" },
+    { vi: "bệnh viện", en: "hospital" },
+    { vi: "phòng khám", en: "clinic" },
+    { vi: "nhà thuốc", en: "pharmacy" },
+    { vi: "thuốc", en: "medicine" },
+    { vi: "đơn thuốc", en: "prescription" },
+    { vi: "thuốc giảm đau", en: "painkiller" },
+    { vi: "thuốc hạ sốt", en: "fever reducer" },
+    { vi: "thuốc cảm", en: "cold medicine" },
+    { vi: "kháng sinh", en: "antibiotic" },
+    { vi: "viên", en: "tablet; pill (counting word)", ex: ["Hai viên một lần.", "Two tablets each time."] },
+    { vi: "Tôi cần gặp bác sĩ", en: "I need to see a doctor" },
+    { vi: "Có bác sĩ nói tiếng Anh không?", en: "Is there an English-speaking doctor?" },
+    { vi: "Tôi muốn mua thuốc giảm đau", en: "I’d like to buy a painkiller" },
+    { vi: "Thuốc này dùng thế nào?", en: "How do I take this medicine?" },
+    { vi: "Một ngày uống hai lần", en: "Take it twice a day" },
+    { vi: "Uống sau khi ăn", en: "Take after eating" },
+    { vi: "Uống trước khi ăn", en: "Take before eating" },
+    { vi: "Tôi bị dị ứng với thuốc kháng sinh", en: "I’m allergic to antibiotics" },
+    { vi: "Bao lâu thì khỏi?", en: "How long until I recover?" },
+    { vi: "Tôi có bảo hiểm", en: "I have insurance" },
+    { vi: "Tôi đỡ hơn rồi", en: "I feel better now" },
+    { vi: "Tôi chưa đỡ", en: "I don’t feel better yet" }
+  ] };

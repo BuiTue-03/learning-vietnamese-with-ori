@@ -1,0 +1,31 @@
+// Lesson in · Giới thiệu bản thân (Introducing yourself).
+// Items are positional (audio in-01.mp3, in-02.mp3, ...): only ever APPEND items, never insert, delete or reorder.
+export default { id: "in", group: "people", title: "Giới thiệu bản thân", sub: "Introducing yourself", unit: "phrases", icon: "people",
+  tip: "Vietnamese people often ask about age, work and family early in a conversation. It is friendly curiosity, and the answers help them choose the right pronoun.",
+  culture: [{ t: "Personal questions", x: "Being asked your age, job or whether you are married is normal small talk. It is not rude. Knowing your age helps the other person pick the right word for “you” and “I”." }],
+  items: [
+    { vi: "Tôi đến từ…", en: "I come from…", ex: ["Tôi đến từ Anh.", "I’m from the UK."] },
+    { vi: "Tôi là người…", en: "I am… (nationality)", ex: ["Tôi là người Úc.", "I’m Australian."] },
+    { vi: "Tôi sống ở…", en: "I live in…", ex: ["Tôi sống ở Luân Đôn.", "I live in London."] },
+    { vi: "Bạn sống ở đâu?", en: "Where do you live?" },
+    { vi: "Tôi hai mươi lăm tuổi", en: "I am twenty-five years old" },
+    { vi: "Bạn bao nhiêu tuổi?", en: "How old are you?" },
+    { vi: "Bạn làm nghề gì?", en: "What do you do for a living?" },
+    { vi: "Tôi đang đi du lịch", en: "I’m travelling" },
+    { vi: "Tôi đến Việt Nam để học tiếng Việt", en: "I came to Vietnam to learn Vietnamese" },
+    { vi: "Tôi làm việc ở Hà Nội", en: "I work in Hà Nội" },
+    { vi: "Đây là lần đầu tiên tôi đến Việt Nam", en: "This is my first time in Vietnam" },
+    { vi: "Bạn đến Việt Nam bao lâu rồi?", en: "How long have you been in Vietnam?" },
+    { vi: "Tôi ở Việt Nam hai tuần", en: "I’m in Vietnam for two weeks" },
+    { vi: "Tôi nói được một chút tiếng Việt", en: "I can speak a little Vietnamese" },
+    { vi: "Bạn có thích Việt Nam không?", en: "Do you like Vietnam?" },
+    { vi: "Tôi rất thích Việt Nam", en: "I like Vietnam very much" },
+    { vi: "Bạn đã có gia đình chưa?", en: "Are you married? (Do you have a family yet?)" },
+    { vi: "Tôi đã có gia đình", en: "I’m married" },
+    { vi: "Tôi chưa có gia đình", en: "I’m not married yet" },
+    { vi: "Tôi có hai con", en: "I have two children" },
+    { vi: "Tôi không có con", en: "I don’t have children" },
+    { vi: "Gia đình tôi có bốn người", en: "There are four people in my family" },
+    { vi: "Đây là bạn tôi", en: "This is my friend" },
+    { vi: "Rất vui được làm quen", en: "Nice to get to know you" }
+  ] };

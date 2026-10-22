@@ -1,0 +1,33 @@
+// Lesson hn · Tham quan (Sightseeing in Hà Nội).
+// Items are positional (audio hn-01.mp3, hn-02.mp3, ...): only ever APPEND items, never insert, delete or reorder.
+export default { id: "hn", group: "situ", title: "Tham quan", sub: "Sightseeing in Hà Nội", unit: "words and phrases", icon: "pin",
+  tip: "Most sights have opening hours and ticket prices posted. Ask Mấy giờ mở cửa? if you are not sure.",
+  culture: [{ t: "At temples and pagodas", x: "Dress modestly (cover shoulders and knees) at temples and pagodas, and keep your voice low. Look for signs that say cấm chụp ảnh (no photography)." }],
+  items: [
+    { vi: "tham quan", en: "to visit; to sightsee" },
+    { vi: "du lịch", en: "travel; tourism" },
+    { vi: "địa điểm", en: "place; attraction" },
+    { vi: "di tích", en: "historic site" },
+    { vi: "lịch sử", en: "history" },
+    { vi: "văn hóa", en: "culture" },
+    { vi: "phố cổ", en: "the Old Quarter" },
+    { vi: "hồ Hoàn Kiếm", en: "Hoàn Kiếm Lake" },
+    { vi: "Văn Miếu", en: "Temple of Literature" },
+    { vi: "chùa Một Cột", en: "One Pillar Pagoda" },
+    { vi: "múa rối nước", en: "water puppetry" },
+    { vi: "vé vào cửa", en: "entrance ticket" },
+    { vi: "Vé bao nhiêu tiền?", en: "How much is a ticket?" },
+    { vi: "Mấy giờ mở cửa?", en: "What time does it open?" },
+    { vi: "Mấy giờ đóng cửa?", en: "What time does it close?" },
+    { vi: "mở cửa", en: "open (for business)" },
+    { vi: "đóng cửa", en: "closed (for business)" },
+    { vi: "chụp ảnh", en: "to take photos" },
+    { vi: "Tôi chụp ảnh được không?", en: "May I take photos?" },
+    { vi: "Chụp ảnh giúp tôi được không?", en: "Could you take a photo of me?" },
+    { vi: "cấm", en: "forbidden; not allowed" },
+    { vi: "Cấm hút thuốc", en: "No smoking" },
+    { vi: "Có hướng dẫn viên nói tiếng Anh không?", en: "Is there an English-speaking guide?" },
+    { vi: "Chỗ này nổi tiếng về gì?", en: "What is this place famous for?" },
+    { vi: "Tôi muốn xem múa rối nước", en: "I’d like to see a water puppet show" },
+    { vi: "Đi bộ đến đó có xa không?", en: "Is it far to walk there?" }
+  ] };

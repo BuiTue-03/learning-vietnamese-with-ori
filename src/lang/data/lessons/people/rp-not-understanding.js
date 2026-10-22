@@ -1,0 +1,30 @@
+// Lesson rp · Khi chưa hiểu (When you don’t understand).
+// Items are positional (audio rp-01.mp3, rp-02.mp3, ...): only ever APPEND items, never insert, delete or reorder.
+export default { id: "rp", group: "people", title: "Khi chưa hiểu", sub: "When you don’t understand", unit: "phrases", icon: "ask",
+  tip: "These are the phrases that keep a conversation going. Learn a few early and use them often.",
+  culture: [{ t: "Asking again is fine", x: "People are usually happy to repeat or slow down for a learner. Saying Tôi nói tiếng Việt chưa giỏi (my Vietnamese isn’t good yet) often makes them speak more clearly." }],
+  items: [
+    { vi: "Bạn có thể nhắc lại không?", en: "Could you repeat that?" },
+    { vi: "Nói lại lần nữa nhé", en: "Please say it once more" },
+    { vi: "Bạn nói chậm hơn được không?", en: "Could you speak more slowly?" },
+    { vi: "Bạn nói nhanh quá!", en: "You speak too fast!" },
+    { vi: "Tôi chưa hiểu", en: "I don’t understand yet" },
+    { vi: "Tôi hiểu một chút", en: "I understand a little" },
+    { vi: "Tôi nghe không rõ", en: "I can’t hear clearly" },
+    { vi: "Bạn nói gì vậy?", en: "What did you say?", note: "With a puzzled tone it can sound like “What are you talking about?”. For a polite request, use “Bạn có thể nhắc lại không?”." },
+    { vi: "Cái này tiếng Việt gọi là gì?", en: "What is this called in Vietnamese?" },
+    { vi: "Từ này nghĩa là gì?", en: "What does this word mean?" },
+    { vi: "Từ này phát âm thế nào?", en: "How do you pronounce this word?" },
+    { vi: "Bạn viết ra được không?", en: "Can you write it down?" },
+    { vi: "Bạn chỉ cho tôi được không?", en: "Can you show me?" },
+    { vi: "Tôi nói tiếng Việt chưa giỏi", en: "My Vietnamese isn’t good yet" },
+    { vi: "Đúng không?", en: "Is that right?" },
+    { vi: "Chưa đúng", en: "Not quite right" },
+    { vi: "Bạn có thể giải thích không?", en: "Could you explain?" },
+    { vi: "Bạn dịch giúp tôi được không?", en: "Could you translate for me?" },
+    { vi: "Có ai nói tiếng Anh không?", en: "Does anyone speak English?" },
+    { vi: "Tôi dùng ứng dụng dịch", en: "I’ll use a translation app" },
+    { vi: "Tôi muốn học thêm từ mới", en: "I want to learn more new words" },
+    { vi: "Tôi sẽ thử lại", en: "I’ll try again" },
+    { vi: "Có chuyện gì vậy?", en: "What’s the matter?; What’s going on?" }
+  ] };

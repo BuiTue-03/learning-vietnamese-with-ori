@@ -1,0 +1,32 @@
+// Lesson qw · Từ để hỏi (Question words).
+// Items are positional (audio qw-01.mp3, qw-02.mp3, ...): only ever APPEND items, never insert, delete or reorder.
+export default { id: "qw", group: "gram", title: "Từ để hỏi", sub: "Question words", unit: "words and phrases", icon: "ask",
+  tip: "In Vietnamese the question word usually stays where the answer will go: Bạn tên là gì? literally means “you name is what?”",
+  culture: [{ t: "Have you eaten yet?", x: "Among people who know each other, “Bạn ăn cơm chưa?” can work like a friendly greeting, as well as a real question." }],
+  items: [
+    { vi: "gì", en: "what", ex: ["Bạn tên là gì?", "What is your name?"] },
+    { vi: "cái gì", en: "what (thing)" },
+    { vi: "ai", en: "who" },
+    { vi: "đâu", en: "where" },
+    { vi: "ở đâu", en: "where (located)", ex: ["Chợ ở đâu?", "Where is the market?"] },
+    { vi: "đi đâu", en: "where to; go where", ex: ["Bạn đi đâu?", "Where are you going?"] },
+    { vi: "từ đâu", en: "from where" },
+    { vi: "khi nào", en: "when" },
+    { vi: "bao giờ", en: "when (also khi nào)" },
+    { vi: "mấy", en: "how many (a small number)", note: "Mấy is used when you expect a small number." },
+    { vi: "mấy giờ", en: "what time" },
+    { vi: "mấy người", en: "how many people" },
+    { vi: "bao nhiêu", en: "how many; how much", note: "Bao nhiêu works for any amount, including prices." },
+    { vi: "thế nào", en: "how", ex: ["Bạn thấy thế nào?", "How do you feel?"] },
+    { vi: "như thế nào", en: "how; in what way" },
+    { vi: "tại sao", en: "why" },
+    { vi: "vì sao", en: "why (a little more formal)" },
+    { vi: "nào", en: "which" },
+    { vi: "cái nào", en: "which one" },
+    { vi: "có… không?", en: "yes/no question frame", ex: ["Bạn có khỏe không?", "Are you well?"] },
+    { vi: "chưa?", en: "yet? (have you… yet?)", ex: ["Bạn ăn cơm chưa?", "Have you eaten yet?"] },
+    { vi: "phải không?", en: "right? isn’t that so?", ex: ["Bạn là người Mỹ, phải không?", "You’re American, right?"] },
+    { vi: "Đây là cái gì?", en: "What is this?" },
+    { vi: "Ai đó?", en: "Who is it?" },
+    { vi: "Tại sao bạn học tiếng Việt?", en: "Why are you learning Vietnamese?" }
+  ] };

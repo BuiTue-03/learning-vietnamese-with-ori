@@ -1,0 +1,40 @@
+// Lesson sh · Mua sắm và trả giá (Shopping and bargaining).
+// Items are positional (audio sh-01.mp3, sh-02.mp3, ...): only ever APPEND items, never insert, delete or reorder.
+export default { id: "sh", group: "situ", title: "Mua sắm và trả giá", sub: "Shopping and bargaining", unit: "words and phrases", icon: "bag",
+  tip: "At a market you can ask for a lower price politely. Smile, ask Bớt được không?, and be ready to walk away.",
+  culture: [
+    { t: "Where bargaining is normal", x: "Bargaining is common at markets and with street sellers. In supermarkets and shops with price tags, the price is fixed." },
+    { t: "Keep it friendly", x: "A smile and a polite pronoun (anh, chị, cô, bác) help. If you cannot agree, you can say thank you and move on." }
+  ],
+  items: [
+    { vi: "mua", en: "to buy" },
+    { vi: "cửa hàng", en: "shop; store" },
+    { vi: "siêu thị", en: "supermarket" },
+    { vi: "cái này", en: "this one" },
+    { vi: "cái kia", en: "that one (over there)" },
+    { vi: "Cái này bao nhiêu tiền?", en: "How much is this?" },
+    { vi: "đắt", en: "expensive" },
+    { vi: "rẻ", en: "cheap" },
+    { vi: "Đắt quá!", en: "Too expensive!" },
+    { vi: "Bớt được không?", en: "Can you lower the price?" },
+    { vi: "Rẻ hơn một chút được không?", en: "Can it be a little cheaper?" },
+    { vi: "Tôi chỉ xem thôi", en: "I’m just looking" },
+    { vi: "Tôi muốn mua cái này", en: "I’d like to buy this" },
+    { vi: "Tôi lấy cái này", en: "I’ll take this one" },
+    { vi: "Tôi thử được không?", en: "Can I try it on?" },
+    { vi: "cỡ", en: "size" },
+    { vi: "Có cỡ lớn hơn không?", en: "Do you have a bigger size?" },
+    { vi: "Có cỡ nhỏ hơn không?", en: "Do you have a smaller size?" },
+    { vi: "áo", en: "shirt; top" },
+    { vi: "quần", en: "trousers" },
+    { vi: "váy", en: "skirt; dress" },
+    { vi: "giày", en: "shoes" },
+    { vi: "túi", en: "bag" },
+    { vi: "Trả bằng thẻ được không?", en: "Can I pay by card?" },
+    { vi: "tiền mặt", en: "cash" },
+    { vi: "thẻ", en: "card" },
+    { vi: "tiền thừa", en: "change (money back)" },
+    { vi: "hóa đơn", en: "receipt; invoice" },
+    { vi: "cân", en: "kilo (at the market)", ex: ["Cho tôi hai cân xoài.", "Two kilos of mango, please."] },
+    { vi: "Hết rồi", en: "It’s sold out; there’s none left" }
+  ] };

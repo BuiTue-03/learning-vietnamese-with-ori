@@ -1,0 +1,32 @@
+// Lesson wk · Công việc (Work and the office).
+// Items are positional (audio wk-01.mp3, wk-02.mp3, ...): only ever APPEND items, never insert, delete or reorder.
+export default { id: "wk", group: "society", title: "Công việc", sub: "Work and the office", unit: "words and phrases", icon: "brief",
+  tip: "Use anh or chị for colleagues who are a little older than you, and em for those who are younger.",
+  culture: [{ t: "Addressing colleagues", x: "At work people usually call each other by a family word plus a name, such as anh Hùng or chị Lan, rather than just the name. Using the right pronoun shows respect." }],
+  items: [
+    { vi: "công việc", en: "work; job" },
+    { vi: "đồng nghiệp", en: "colleague" },
+    { vi: "sếp", en: "boss (informal)" },
+    { vi: "khách hàng", en: "customer; client" },
+    { vi: "hợp đồng", en: "contract" },
+    { vi: "cuộc họp", en: "meeting" },
+    { vi: "phòng họp", en: "meeting room" },
+    { vi: "báo cáo", en: "report" },
+    { vi: "email", en: "email" },
+    { vi: "dự án", en: "project" },
+    { vi: "kế hoạch", en: "plan" },
+    { vi: "hạn chót", en: "deadline" },
+    { vi: "lương", en: "salary" },
+    { vi: "tăng ca", en: "overtime" },
+    { vi: "nghỉ phép", en: "annual leave; time off" },
+    { vi: "đi làm", en: "to go to work" },
+    { vi: "tan làm", en: "to finish work" },
+    { vi: "danh thiếp", en: "business card" },
+    { vi: "Đây là danh thiếp của tôi", en: "Here is my business card" },
+    { vi: "Tôi đang bận họp", en: "I’m in a meeting" },
+    { vi: "Tôi sẽ gửi email cho bạn", en: "I’ll send you an email" },
+    { vi: "Bạn gửi báo cáo cho tôi được không?", en: "Could you send me the report?" },
+    { vi: "Hạn chót là thứ sáu", en: "The deadline is Friday" },
+    { vi: "Tôi xin nghỉ phép", en: "I’d like to take leave" },
+    { vi: "Chúng ta họp lúc mấy giờ?", en: "What time is our meeting?" }
+  ] };

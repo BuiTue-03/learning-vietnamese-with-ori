@@ -1,0 +1,33 @@
+// Lesson cs · Quần áo (Clothes and accessories).
+// Items are positional (audio cs-01.mp3, cs-02.mp3, ...): only ever APPEND items, never insert, delete or reorder.
+export default { id: "cs", group: "life", title: "Quần áo", sub: "Clothes and accessories", unit: "words and phrases", icon: "shirt",
+  tip: "Use mặc for clothes you put on, and đội for a hat. Cái này vừa với tôi means “This fits me”.",
+  culture: [{ t: "North and South", x: "A T-shirt is áo phông in the North and áo thun in the South. Socks are tất in the North and vớ in the South." }],
+  items: [
+    { vi: "quần áo", en: "clothes" },
+    { vi: "áo sơ mi", en: "dress shirt" },
+    { vi: "áo phông", en: "T-shirt", note: "In the South: áo thun." },
+    { vi: "áo khoác", en: "jacket; coat" },
+    { vi: "áo len", en: "sweater" },
+    { vi: "áo dài", en: "áo dài (traditional long dress)" },
+    { vi: "quần dài", en: "long trousers" },
+    { vi: "quần đùi", en: "shorts" },
+    { vi: "dép", en: "sandals; flip-flops" },
+    { vi: "tất", en: "socks", note: "In the South: vớ." },
+    { vi: "mũ", en: "hat; cap" },
+    { vi: "kính râm", en: "sunglasses" },
+    { vi: "thắt lưng", en: "belt" },
+    { vi: "đồng hồ", en: "watch; clock" },
+    { vi: "ví", en: "wallet" },
+    { vi: "ba lô", en: "backpack" },
+    { vi: "khăn", en: "scarf; cloth" },
+    { vi: "đồ ngủ", en: "pyjamas" },
+    { vi: "đồ bơi", en: "swimsuit" },
+    { vi: "mặc", en: "to wear (clothes)" },
+    { vi: "vừa", en: "to fit; just right" },
+    { vi: "rộng", en: "loose; wide" },
+    { vi: "chật", en: "tight" },
+    { vi: "Cái này vừa với tôi", en: "This fits me" },
+    { vi: "Cái này rộng quá", en: "This is too loose" },
+    { vi: "Cái này chật quá", en: "This is too tight" }
+  ] };

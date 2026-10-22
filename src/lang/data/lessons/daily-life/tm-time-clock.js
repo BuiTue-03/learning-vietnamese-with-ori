@@ -1,0 +1,31 @@
+// Lesson tm · Giờ giấc (Time of day and the clock).
+// Items are positional (audio tm-01.mp3, tm-02.mp3, ...): only ever APPEND items, never insert, delete or reorder.
+export default { id: "tm", group: "life", title: "Giờ giấc", sub: "Time of day and the clock", unit: "words and phrases", icon: "clock",
+  tip: "Say the hour with giờ. For example, three o’clock is ba giờ, and half past three is ba giờ rưỡi.",
+  culture: [{ t: "Parts of the day", x: "Sáng is morning, trưa is around midday, chiều is the afternoon, tối is the evening and đêm is the deep night. The exact hours shift a little from person to person." }],
+  items: [
+    { vi: "bây giờ", en: "now" },
+    { vi: "hôm nay", en: "today" },
+    { vi: "hôm qua", en: "yesterday" },
+    { vi: "ngày mai", en: "tomorrow" },
+    { vi: "hôm kia", en: "the day before yesterday" },
+    { vi: "ngày kia", en: "the day after tomorrow" },
+    { vi: "sáng", en: "morning", note: "Sáng also means bright." },
+    { vi: "trưa", en: "midday; noon" },
+    { vi: "chiều", en: "afternoon" },
+    { vi: "tối", en: "evening; night" },
+    { vi: "đêm", en: "late at night" },
+    { vi: "giờ", en: "hour; o’clock" },
+    { vi: "phút", en: "minute" },
+    { vi: "Mấy giờ rồi?", en: "What time is it?" },
+    { vi: "Bây giờ là ba giờ", en: "It’s three o’clock now" },
+    { vi: "ba giờ rưỡi", en: "half past three (3:30)" },
+    { vi: "bốn giờ kém mười", en: "ten to four (3:50)", note: "Kém means less than." },
+    { vi: "sớm", en: "early" },
+    { vi: "muộn", en: "late" },
+    { vi: "mỗi ngày", en: "every day" },
+    { vi: "một lát nữa", en: "in a little while" },
+    { vi: "Bạn rảnh không?", en: "Are you free?" },
+    { vi: "đúng giờ", en: "on time" },
+    { vi: "Hẹn gặp lúc tám giờ", en: "See you at eight o’clock" }
+  ] };

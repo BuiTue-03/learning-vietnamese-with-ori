@@ -1,0 +1,41 @@
+// Lesson fam · Xưng hô và gia đình (Pronouns and family).
+// Items are positional (audio fam-01.mp3, fam-02.mp3, ...): only ever APPEND items, never insert, delete or reorder.
+export default { id: "fam", group: "people", title: "Xưng hô và gia đình", sub: "Pronouns and family", unit: "words", icon: "people", pronoun: true,
+  tip: "Vietnamese uses family words as pronouns. Which one you use depends on the other person’s age and your relationship.",
+  culture: [
+    { t: "There is no single “you”", x: "People pick a family word such as anh or chị based on the other person’s age and their relationship to you. Calling a stranger anh or chị is polite, not strange." },
+    { t: "Father’s side and mother’s side", x: "Grandparents and many relatives have different words for the father’s side (nội) and the mother’s side (ngoại)." }
+  ],
+  items: [
+    { vi: "tôi", en: "I; me", note: "Neutral and polite, safe with strangers.", ex: ["Tôi là Anna.", "I am Anna."] },
+    { vi: "bạn", en: "you (to a friend or peer); friend", ex: ["Bạn khỏe không?", "How are you?"] },
+    { vi: "anh", en: "older brother; you (to a man a bit older than you)", ex: ["Cảm ơn anh.", "Thank you (to an older man)."] },
+    { vi: "chị", en: "older sister; you (to a woman a bit older than you)", ex: ["Chào chị!", "Hello (to an older woman)!"] },
+    { vi: "em", en: "younger sibling; you (to someone younger); I (to someone older)", note: "A younger person often calls themselves em when speaking to an older person." },
+    { vi: "ông", en: "grandfather; Mr. (to an elderly man)" },
+    { vi: "bà", en: "grandmother; Mrs. (to an elderly woman)" },
+    { vi: "bố", en: "father", note: "In the South you will hear ba." },
+    { vi: "mẹ", en: "mother", note: "In the South you will hear má." },
+    { vi: "con", en: "child; son or daughter", note: "Children call themselves con when talking to their parents." },
+    { vi: "con trai", en: "son" },
+    { vi: "con gái", en: "daughter" },
+    { vi: "anh trai", en: "older brother" },
+    { vi: "chị gái", en: "older sister" },
+    { vi: "em trai", en: "younger brother" },
+    { vi: "em gái", en: "younger sister" },
+    { vi: "chồng", en: "husband" },
+    { vi: "vợ", en: "wife" },
+    { vi: "ông nội", en: "grandfather (father’s side)" },
+    { vi: "bà nội", en: "grandmother (father’s side)" },
+    { vi: "ông ngoại", en: "grandfather (mother’s side)" },
+    { vi: "bà ngoại", en: "grandmother (mother’s side)" },
+    { vi: "chú", en: "uncle (father’s younger brother); polite for a man around your father’s age" },
+    { vi: "bác", en: "uncle or aunt older than your parent; polite for an older person" },
+    { vi: "cô", en: "aunt (father’s sister); female teacher", note: "Also polite for a woman younger than your parents." },
+    { vi: "dì", en: "aunt (mother’s younger sister)" },
+    { vi: "cháu", en: "grandchild; nephew or niece; I (to someone of your parents’ or grandparents’ age)" },
+    { vi: "thầy", en: "male teacher" },
+    { vi: "cô giáo", en: "female teacher" },
+    { vi: "gia đình", en: "family" },
+    { vi: "mình", en: "I; me (friendly, to a peer)", note: "Used between friends or classmates. Between couples it can also mean “darling”." }
+  ] };
